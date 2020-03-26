@@ -1,0 +1,145 @@
+/* ----- | Image Carousel | ----- */
+.carousel-container {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+/* ----- | BUTTONS | ----- */
+#prev-btn {
+    position: absolute;
+    z-index: 10;
+    font-size: 0;
+    left: 25%;
+    top: 70%;
+    background-color: transparent;
+}
+#prev-btn::before {
+    content: "";
+    display: block;
+    height: 51px;
+    width: 51px;
+    background-image: url('../icons/previous.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 2s ease-in-out;
+}
+#prev-btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#next-btn {
+    position: absolute;
+    z-index: 10;
+    font-size: 0;
+    right: 25%;
+    top: 70%;
+    background-color: transparent;
+    transition: all 2s ease-in-out;
+}
+#next-btn::before {
+    content: "";
+    display: block;
+    height: 51px;
+    width: 51px;
+    background-image: url('../icons/next.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#next-btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* ----- | Welcome Message | ----- */
+main span {
+    display: block;
+    font-size: 4rem;
+    color: #95FDC1;
+    font-family: Heavy Data;
+    margin: 2rem;
+}
+main p {
+    color: #707070;
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+main hr {
+    width: 50%;
+}
+
+/* ----- | Gallery Cards | ----- */
+#gallery-cards {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card a {
+    margin: 0 4rem;
+    font-size: 0;
+    display: flex;
+    border: 2px solid #95FDC1;
+    width: 275px;
+    height: 400px;
+    border: 5px solid #95FDC1;
+}
+#gallery-cards li:nth-of-type(1)::before {
+    content: "";
+    display: block;
+    height: 400px;
+    width: 275px;
+    background-image: url('../optimized_art/full/prize.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    margin: 0 4rem;
+}
+#gallery-cards li:nth-of-type(2)::before {
+    content: "";
+    display: block;
+    height: 400px;
+    width: 275px;
+    background-image: url('../optimized_art/full/sam.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    margin: 0 4rem;
+}
+#gallery-cards li:nth-of-type(3)::before {
+    content: "";
+    display: block;
+    height: 400px;
+    width: 275px;
+    background-image: url('../optimized_art/full/summerepos.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    margin: 0 4rem;
+}
+.card h2 {
+    font-size: 3.2rem;
+    font-family: Heavy Data;
+    color: #95FDC1;
+    text-align: center;
+    margin-bottom: 1rem;
+}

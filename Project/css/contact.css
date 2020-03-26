@@ -1,0 +1,9 @@
+
+/* ----- | Main Navigation | ----- */
+/* = switching colors =*/
+#main-nav > li:first-of-type a {
+    color: #707070;
+}
+#main-nav > li:nth-of-type(5) a {
+    color: #95FDC1;
+}
