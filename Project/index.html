@@ -12,7 +12,7 @@
             <!-- logo -->
         </header>
         <body>
-            <nav>
+            <nav id="main-nav">
                 <a href="#">Home</a>
                 <a href="#">Gallery</a>
                 <a href="#">Commission Info</a>
@@ -21,8 +21,37 @@
             </nav>
             <main>
                 <!-- image carousel -->
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="optimized_art/full/prize.jpg" id="lastClone" alt="Art of a pony lying on its purple hair with glowing stars">
+                        <img src="optimized_art/full/konny.jpg" alt="Art of a red northling glowing in a dark forest with red leaves">
+                        <img src="optimized_art/full/world.jpg" alt="Fanart of the characters from the game World Next Door">
+                        <img src="optimized_art/full/aichlysamum.jpg" alt="Art of a pegasus pony sitting contently in a tree at night, surrounded by fireflies">
+                        <img src="optimized_art/full/platinum_feathert.jpg" alt="Painting of a happy unicorn with a butterfly on its nose">
+                        <img src="optimized_art/full/prize.jpg" alt="Art of a pony lying on its purple hair with glowing stars">
+                        <img src="optimized_art/full/konny.jpg" id="firstClone" alt="Art of a red northling glowing in a dark forest with red leaves">
+                    </div>
+                </div>
+                <button id="prev-btn">Previous</button>
+                <button id="next-btn">Next</button>
+                <!-- welcome message -->
+                <p><span>Welcome!</span>Please choose an art style that interests you, or select a gallery option!<hr></p>
+                <!-- gallery cards -->
                 <section>
-                    <!-- card -->
+                    <ul id="gallery-cards">
+                        <li class="card">
+                            <h2>Headshots</h2>
+                            <a href="">Headshots</a>
+                        </li>
+                        <li class="card">
+                            <h2>Fullbodies</h2>
+                            <a href="">Fullbodies</a>
+                        </li>                        
+                        <li class="card">
+                            <h2>Rendered Scenes</h2>
+                            <a href="">Rendered Scenes</a>
+                        </li>
+                    </ul>
                 </section>
             </main>
             <footer>
@@ -39,6 +68,7 @@
                     <a href="">Twitch</a>
                 </nav>
             </footer>
+            <script src="main.js"></script>
         </body>
     </body>
 </html>
