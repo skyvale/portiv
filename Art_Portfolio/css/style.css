@@ -1,0 +1,440 @@
+/* ----------------------------------
+   -----------| MAIN CSS |-----------
+   ---------------------------------- 
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #121314;
+    font-family: Quicksand;
+    font-size: 2.4rem;
+    margin: 0 auto;
+}
+
+/* ----- | HEADER | ----- */
+header {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: rgb(30, 14, 173);
+}
+header::after {
+    content: "";
+    display: block;
+    height: 300px;
+    width: 300px;
+    background-image: url('../art/icons/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+
+/* ----- | Main Navigation | ----- */
+
+nav {
+    width: 1000px;
+    margin: 0 auto;
+}
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    padding-left: 0;
+}
+nav li {
+    float: left;
+    width: 200px;
+    line-height: 40px;
+}
+nav a {
+    color:#707070;    
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #95fdc1;
+} 
+
+/* This section is the gallery dropdown navigation */
+.dropdown{
+    display: none;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1000;
+}
+.dropdown li{
+    float: none;
+    width: 200px;
+}
+li:hover > ul {
+    display: block;
+    visibility: visible;
+    font-size: 1.8rem;
+    background-color: #121314;
+    border: 2px solid #95fdc1;
+    border-radius: 0 0 10px 10px;
+}
+
+/* ----- | FOOTER | ----- */
+
+footer {
+    color: #707070;
+    margin-top: 10rem;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    border-top: 2px solid #95FDC1;
+}
+footer a {
+    color: #707070;
+}
+footer > p {
+    width: 200px;
+    margin-top: 2rem;
+}
+footer > nav {
+    margin-top: 2rem;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.footer-nav a {
+    margin-bottom: 1rem;
+}
+
+/* This is for switching the font for the social media icons */
+.social-media {
+    font-size: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social-media a:first-of-type::before { /* deviantart */
+    content: "";
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-image: url('../art/icons/deviant.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1rem;
+}
+.social-media a:nth-of-type(2)::before { /* instagram */
+    content: "";
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-image: url('../art/icons/instagram.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1rem;
+}
+.social-media a:nth-of-type(3)::before { /* youtube */
+    content: "";
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-image: url('../art/icons/youtube.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1rem;
+}
+.social-media a:nth-of-type(4)::before { /* twitter */
+    content: "";
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-image: url('../art/icons/twitter.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1rem;
+}
+.social-media a:last-of-type::before { /* twitch */
+    content: "";
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-image: url('../art/icons/twitch.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1rem;
+}
+
+
+/* ----------------------------------
+   -----------| HOME PAGE |----------
+   ---------------------------------- 
+*/
+
+/* ----- | Image Carousel | ----- */
+.carousel-container {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+/* ----- | Buttons | ----- */
+#prev-btn {
+    position: absolute;
+    z-index: 10;
+    font-size: 0;
+    left: 25%;
+    top: 70%;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+#prev-btn::before {
+    content: "";
+    display: block;
+    height: 51px;
+    width: 51px;
+    background-image: url('../art/icons/previous.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#prev-btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#next-btn {
+    position: absolute;
+    z-index: 10;
+    font-size: 0;
+    right: 25%;
+    top: 70%;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+#next-btn::before {
+    content: "";
+    display: block;
+    height: 51px;
+    width: 51px;
+    background-image: url('../art/icons/next.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#next-btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* ----- | Welcome Message | ----- */
+.home-page span {
+    display: block;
+    font-size: 4rem;
+    color: #95FDC1;
+    font-family: Heavy Data;
+    margin: 2rem;
+}
+.home-page p {
+    color: #707070;
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.home-page hr {
+    width: 50%;
+}
+
+/* ----- | Gallery Cards | ----- */
+#gallery-cards {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card a {
+    margin: 0 4rem;
+    font-size: 0;
+    display: flex;
+    border: 2px solid #95FDC1;
+    width: 275px;
+    height: 400px;
+    border: 5px solid #95FDC1;
+}
+#gallery-cards li:nth-of-type(1)::before {
+    content: "";
+    display: block;
+    height: 400px;
+    width: 275px;
+    background-image: url('../art/full/platinum_feathert.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    margin: 0 4rem;
+}
+#gallery-cards li:nth-of-type(2)::before {
+    content: "";
+    display: block;
+    height: 400px;
+    width: 275px;
+    background-image: url('../art/full/chiakiro.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    margin: 0 4rem;
+}
+#gallery-cards li:nth-of-type(3)::before {
+    content: "";
+    display: block;
+    height: 400px;
+    width: 275px;
+    background-image: url('../art/full/honeydew.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    margin: 0 4rem;
+}
+.card h2 {
+    font-size: 3.2rem;
+    font-family: Heavy Data;
+    color: #95FDC1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* ----------------------------------
+   ----------| ABOUT PAGE |----------
+   ---------------------------------- 
+*/
+
+/* ----- | About Section | ----- */
+
+.about-page h2 {
+    font-size: 3.2rem;
+    color: #95FDC1;
+    text-align: center;
+    margin: 4rem;
+    font-weight: 700;
+}
+
+.about-page img {
+    float: right;
+    width: 400px;
+    display: inline-block;
+    margin: 0 20rem 0 4rem;
+}
+
+.about-page p {
+    color: #707070;
+    font-size: 2.4rem;
+    margin: 2rem 5rem 0 10rem;
+    padding: 0 10rem;
+    line-height: 1.5;
+}
+
+.about-page span a {
+    font-size: 2.4rem;
+    font-family: Quicksand;
+    color: #95fdc1;
+}
+
+.about-page::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* ----------------------------------
+   ---------| CONTACT PAGE |---------
+   ---------------------------------- 
+*/
+
+/* ----- | Explanation | ----- */
+.contact-page > p {
+    font-size: 2.4rem;
+    color: #9D9D9D;
+    font-weight: 600;
+    width: 70%;
+    margin: 4rem auto;
+    text-align: center;
+    line-height: 1.4;
+    
+}
+.contact-page span a {
+    color: #95FDC1;
+}
+.contact-page span:hover {
+    cursor: pointer;
+}
+
+/* ----- | Form | ----- */
+
+form {
+    color: #707070;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #95FDC1;
+    border-radius: 5px;
+    width: 50%;
+    height: 800px;
+}
+form h2 {
+    color: #95FDC1;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 2rem;
+}
+form label {
+    display: none;
+}
+form input {
+    font-size: 2rem;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    height: 45px;
+    width: 80%;
+}
+form textarea {
+    font-size: 2rem;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    height: 300px;
+    width: 80%;
+}
+form p {
+    color: #9D9D9D;
+    font-size: 2.4rem;
+    width: 80%;
+    margin: 0 auto;
+}
+form button {
+    margin-top: 4rem;
+    font-size: 2.4rem;
+    width: 300px;
+    height: 40px;
+    background-color: #515658;
+    color: #95FDC1;
+    border-radius: 5px;
+}
+form button:hover {
+    cursor: pointer;
+    background-color: #95FDC1;
+    color: #515658;
+}

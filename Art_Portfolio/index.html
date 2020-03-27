@@ -4,48 +4,53 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/home.css">
-        <title>Skylacuna Art Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Skylacuna Art Portfolio - Home Page</title>
     </head>
     <body>
+
         <header>
             <!-- logo -->
         </header>
-        <nav role="navigation" aria-label="Main">
+
+        <nav role="navigation" aria-label="main navigation">
             <ul>
                 <li aria-current="page"><a href="#">Home</a></li>
                 <li><a href="#">Gallery</a>
                     <ul class="dropdown">
-                        <li><a href="../Project/gallery/headshots.html">Headshots/Busts</a></li>
-                        <li><a href="../Project/gallery/fullbodies.html">Fullbodies</a></li>
-                        <li><a href="../Project/gallery/scenes.html">Rendered Scenes</a></li>
+                        <li><a href="../Art_Portfolio/gallery_hs.html">Headshots/Busts</a></li>
+                        <li><a href="../Art_Portfolio/gallery_fb.html">Fullbodies</a></li>
+                        <li><a href="../Art_Portfolio/gallery_rs.html">Rendered Scenes</a></li>
                     </ul>
                 </li>
-                <li><a href="../Project/commissions.html">Commission Info</a></li>
-                <li><a href="../Project/about.html">About</a></li>
-                <li><a href="../Project/contact.html">Contact</a></li>
+                <li><a href="../Art_Portfolio/commission.html">Commission Info</a></li>
+                <li><a href="../Art_Portfolio/about.html">About</a></li>
+                <li><a href="../Art_Portfolio/contact.html">Contact</a></li>
             </ul>
+        </nav>
 
-            <main>
+            <main class="home-page">
+
                 <!-- image carousel -->
-                <div class="carousel-container">
+                <div aria-label="image carousel" class="carousel-container">
                     <div class="carousel-slide">
-                        <img src="optimized_art/full/prize.jpg" id="lastClone" alt="Art of a pony lying on its purple hair with glowing stars">
-                        <img src="optimized_art/full/konny.jpg" alt="Art of a red northling glowing in a dark forest with red leaves">
-                        <img src="optimized_art/full/world.jpg" alt="Fanart of the characters from the game World Next Door">
-                        <img src="optimized_art/full/aichlysamum.jpg" alt="Art of a pegasus pony sitting contently in a tree at night, surrounded by fireflies">
-                        <img src="optimized_art/full/platinum_feathert.jpg" alt="Painting of a happy unicorn with a butterfly on its nose">
-                        <img src="optimized_art/full/prize.jpg" alt="Art of a pony lying on its purple hair with glowing stars">
-                        <img src="optimized_art/full/konny.jpg" id="firstClone" alt="Art of a red northling glowing in a dark forest with red leaves">
+                        <img src="art/full/aichlysamum.jpg" id="lastClone" alt="Art of a pegasus pony sitting contently in a tree at night, surrounded by fireflies">
+                        <img src="art/full/konny.jpg" alt="Art of a red northling glowing in a dark forest with red leaves">
+                        <img src="art/full/world.jpg" alt="Fanart of the characters from the game World Next Door">
+                        <img src="art/full/trotcon.jpg" alt="Two animal characters walking through a steampunk themed city">
+                        <img src="art/full/platinum_feathert.jpg" alt="Painting of a happy unicorn with a butterfly on its nose">
+                        <img src="art/full/aichlysamum.jpg" alt="Art of a pegasus pony sitting contently in a tree at night, surrounded by fireflies">
+                        <img src="art/full/konny.jpg" id="firstClone" alt="Art of a red northling glowing in a dark forest with red leaves">
                     </div>
                 </div>
                 <button id="prev-btn">Previous</button>
                 <button id="next-btn">Next</button>
+
                 <!-- welcome message -->
                 <p><span>Welcome!</span>Please choose an art style that interests you, or select a gallery option!<hr></p>
+
                 <!-- gallery cards -->
-                <section>
+                <section aria-label="gallery links">
                     <ul id="gallery-cards">
                         <li class="card">
                             <h2>Headshots</h2>
@@ -61,15 +66,16 @@
                         </li>
                     </ul>
                 </section>
+
             </main>
             
             <footer>
-                <nav id="footer-nav">
-                    <a href="./optimized_art/Skylacuna _ Terms of Service.pdf">Terms of Service</a>
-                    <a href="./contact.html">Contact Me</a>
+                <nav class="footer-nav">
+                    <a href="art/etc/Skylacuna _ Terms of Service.pdf">Terms of Service</a>
+                    <a href="contact.html">Contact Me</a>
                 </nav>
                 <p>Skylacuna &copy; 2020</p>
-                <nav id="social-media">
+                <nav aria-label="social media links" class="social-media">
                     <a href="https://www.deviantart.com/skylacuna/gallery/">DeviantArt</a>
                     <a href="https://www.instagram.com/skylacuna/">Instagram</a>
                     <a href="https://www.youtube.com/channel/UCV86nnfYHiz5Mi4oFOokEJQ">YouTube</a>
@@ -77,6 +83,8 @@
                     <a href="https://www.twitch.tv/marshmerry">Twitch</a>
                 </nav>
             </footer>
-            <script src="main.js"></script>
+
+            <script src="js/main.js"></script>
+
     </body>
 </html>
