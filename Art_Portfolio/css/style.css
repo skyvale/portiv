@@ -116,6 +116,9 @@ footer > nav {
     flex-direction: row;
     justify-content: center;
 }
+.social-media a:hover {
+    opacity: 50%;
+}
 .social-media a:first-of-type::before { /* deviantart */
     content: "";
     display: block;
@@ -317,6 +320,212 @@ footer > nav {
     color: #95FDC1;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+/* ----------------------------------
+   -------| COMMISSIONS PAGE |-------
+   ---------------------------------- 
+*/
+
+.commission-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    color: #707070;
+    width: 1800px;
+    margin: 0 auto;
+}
+.commission-page h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #95fdc1;
+    border-bottom: 1px solid #515658;
+}
+.commission-container img {
+    width: 300px;
+    height: 300px;
+}
+.commission-container span {
+    color: #A3A3A3;
+    font-weight: 500;
+}
+.commission-container section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    padding: 6rem 0;
+    margin-right: 10rem;
+    border-top: 1px solid #515658;
+}
+.commission-container section:nth-of-type(1) {
+    border-top: none;
+}
+.commission-container section:nth-of-type(2n) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.commission-container section p:first-of-type {
+    margin-top: 1rem;
+}
+.text {
+    padding: 0 6rem;
+    line-height: 1.4;
+}
+.text:nth-of-type(1n) {
+    padding-right: 28rem;
+}
+.images {
+    display: flex;
+}
+
+/* This is for the left navigation aka breadcrumbs */
+.commission-container nav {
+    display: flex;
+    width: 300px;
+}
+.commission-container nav ul {
+    width: 300px;
+    position: fixed;
+    top: 12%;
+    padding-left: 10px;
+    list-style: none;
+    margin: 0;
+    border-left: 1px solid #95fdc1;
+
+}
+.commission-container nav ul li:hover {
+    cursor: pointer;
+    color: #95fdc1;
+}
+
+/* This is for the additional commission info section */
+.commission-page > section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #707070;
+    padding: 6rem 0;
+    border-top: 1px solid #515658;
+    line-height: 1.4;
+}
+.commission-page section:last-of-type > h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding-bottom: 0.5rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #515658;
+}
+.commission-page h4 {
+    color: #A3A3A3;
+    font-weight: 500;
+}
+.commission-page h4:last-of-type {
+    margin-top: 2rem;
+}
+
+/* ----------------------------------------
+   ------------| GALLERY PAGES |-----------
+   ----------------------------------------
+*/
+.image-grid {
+    display: flex;
+    justify-content: center;
+}
+.image-grid img {
+    width: 300px;
+    height: 300px;
+    opacity: 50%;
+    margin: 4rem;
+    box-shadow: 0 0 2px #95fdc1;
+    transition: all .2s ease-in-out;
+}
+.image-grid img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 100%;
+    box-shadow: 0 0 20px #95fdc1;
+}
+
+/* this is for the overlay that opens when an image is clicked */
+.art-overlay {
+    position: fixed;
+    top: 0;
+    background-color: #121314;
+    height: 100vh;
+    z-index: 1000;
+}
+/* this is the go back button that exits the overlay */
+.art-overlay button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 0;
+    background-color: transparent;
+}
+.art-overlay button::before {
+    content: "";
+    display: block;
+    height: 75px;
+    width: 75px;
+    background-image: url('../art/icons/goback.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.art-overlay button:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+.art-overlay section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.art-overlay img {
+    height: 100vh;
+    max-width: 50%;
+    padding: 4rem;
+}
+.overlay-elements {
+    display: flex;
+}
+.overlay-elements h3 {
+    color: #95fdc1;
+    margin: 2rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    width: 400px;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #515658;
+}
+.art-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 800px;
+    color: #707070;
+}
+.art-description p {
+    margin: 2rem;
+    line-height: 1.2;
+}
+
+
+
+/* ----------------------------------------
+   ----------| GALLERY -HS- PAGE |---------
+   ----------------------------------------
+*/
+
+.gallery-hs-page h2 {
+    text-align: center;
+    font-size: 3.2rem;
+    color: #95fdc1;
+    font-family: Heavy Data;
+    padding: 4rem 2rem;
 }
 
 /* ----------------------------------

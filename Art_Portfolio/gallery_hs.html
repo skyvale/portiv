@@ -3,45 +3,172 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="../css/headshots.css">
+        <link rel="stylesheet" type="text/css" href="../Art_Portfolio/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../Art_Portfolio/css/style.css">
         <title>Gallery Page - Headshots</title>
     </head>
     <body>
+
         <header>
             <!-- logo -->
         </header>
+
         <nav role="navigation" aria-label="Main">
             <ul>
-                <li aria-current="page"><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a>
+                <li><a href="index.html">Home</a></li>
+                <li aria-current="page"><a href="#">Gallery</a>
                     <ul class="dropdown">
-                        <li><a href="../Project/gallery/headshots.html">Headshots/Busts</a></li>
-                        <li><a href="../Project/gallery/fullbodies.html">Fullbodies</a></li>
-                        <li><a href="../Project/gallery/scenes.html">Rendered Scenes</a></li>
+                        <li aria-current="page"><a href="#">Headshots/Busts</a></li>
+                        <li><a href="gallery_fb.html">Fullbodies</a></li>
+                        <li><a href="gallery_rs.html">Rendered Scenes</a></li>
                     </ul>
                 </li>
-                <li><a href="../Project/commissions.html">Commission Info</a></li>
-                <li><a href="../Project/about.html">About</a></li>
-                <li><a href="../Project/contact.html">Contact</a></li>
+                <li><a href="commission.html">Commission Info</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <main>
-            <div id="image-grid">
-                <img src="../optimized_art/thumbnails/aichlysamum_thumbnail.jpg">
-                <img src="../optimized_art/thumbnails/amekumo_thumbnail.jpg">
-                <img src="../optimized_art/thumbnails/bepis_thumbnail.png">
-                <img src="../optimized_art/thumbnails/cass_thumbnail.png">
+
+        <main class="gallery-hs-page">
+            <h2>Gallery - Headshots</h2>
+            <div class="image-grid">
+                <div class="col1">
+                    <img src="../Art_Portfolio/art/thumbnails/amekumo_thumbnail.jpg">
+                    <img src="../Art_Portfolio/art/thumbnails/cass_thumbnail.png">
+                </div>
+                <div class="col2">
+                    <img src="../Art_Portfolio/art/thumbnails/crown_graffiti_thumbnail.jpg">
+                    <img src="../Art_Portfolio/art/thumbnails/sonder_thumbnail.png">
+                </div>
+                <div class="col3">
+                    <img src="../Art_Portfolio/art/thumbnails/insomnia_thumbnail.png">
+                    <img src="../Art_Portfolio/art/thumbnails/platinum_thumbnail.jpg">
+                </div>
+                <div class="col4">
+                    <img src="../Art_Portfolio/art/thumbnails/voidless_thumbnail.jpg">
+                </div>
+            </div>
+            <div hidden class="art-overlay">
+                <div class="overlay-elements">
+                    <div hidden class="overlay1">
+                        <button>Go Back</button>
+                        <section>
+                            <img src="art/full/ame_kumo.jpg">
+                            <div class="art-description">
+                                <h3>Could it be..?</h3>
+                                <p> A rendered painting bust of <span>Ame Kumo's</span> butterfly dragon
+                                    character! I really love the colours and the design of this closed species.
+                                    I tried something new with the shading here and it was much faster than my
+                                    normal method of shading. I'm trying to zoom out more when drawing so that
+                                    'less is more', so to speak.</p>
+                                <p> This art is Ame's prize for winning my raffle on EA!</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div hidden class="overlay2">
+                        <button>Go Back</button>
+                        <section>
+                            <img src="art/full/cassandra_fanart.jpg">
+                            <div class="art-description">
+                                <h3>Moondrop</h3>
+                                <p> A quick painting I made of Cassandra's moon drop transformation from
+                                    the Tangled TV series! She looks so cool, but I'm sad that she was 
+                                    tricked into betraying Rapunzel. I hope she is redeemed in the end. I
+                                    referenced the screenshot from the episode trailer!
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                    <div hidden class="overlay3">
+                        <button>Go Back</button>
+                        <section>
+                            <img src="art/full/crown.jpg">
+                            <div class="art-description">
+                                <h3>Cr0wn</h3>
+                                <p> This is a stylized art of my OC, Cr0wn, otherwise known as Sam. I 
+                                    really like the style I used for this, and I hope I can replicate it
+                                    in the future and that this isn't purely a fluke.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                    <div hidden class="overlay4">
+                        <button>Go Back</button>
+                        <section>
+                            <img src="art/full/sonder.jpg">
+                            <div class="art-description">
+                                <h3>Would you like to dance?</h3>
+                                <p> For a content on NA, I drew a gijinka version of my northling OC, Sonder!
+                                    I enjoy otome games, so I wanted to draw him as a romancable character in 
+                                    one. A fake screenshot, if you will. It would be cool if I could make my 
+                                    own otome game one day, but my anime drawing skills definitely need some 
+                                    work before then.
+                                </p>
+                                <p> Would you dance with him? I'm surprising he had the courage to ask, since
+                                    Sonder is normally a very shy and withdrawn persona.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                    <div hidden class="overlay5">
+                        <button>Go Back</button>
+                        <section>
+                            <img src="art/full/insomnia.jpg">
+                            <div class="art-description">
+                                <h3>Insomnia</h3>
+                                <p> One of my favourite commissions I did for Inktober 2019. This was a commissions
+                                    for <span>Eeveeandocs</span> on Instagram! I relate to this character. Spending
+                                    long nights up in front of a screen, staring at broken code, wanting desperately 
+                                    to sleep but knowing you have a project that is due the next day...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                    <div hidden class="overlay6">
+                        <button>Go Back</button>
+                        <section>
+                            <img src="art/full/platinum_feathert.jpg">
+                            <div class="art-description">
+                                <h3>Wonder</h3>
+                                <p> I love the style I managed in this drawing! I tried to utilize a field blur affect
+                                    and it really made things look good. I also changed my painting style a smidge- I
+                                    added eyelashes and ribs on the horn, the eyes are different and I spent less time
+                                    on the hair. I like the soft, elegant look it turned out with though! I hope I can 
+                                    draw something this good again.
+                                </p>
+                                <p> This art was a gift for my friend, <span>Platinum Feather</span> on EA! She has a 
+                                    lovely OC and I can't wait to try redrawing this next year to see how much I've 
+                                    improved in my art!</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div hidden class="overlay7">
+                        <button>Go Back</button>
+                        <section>
+                            <img src="art/full/voidless.jpg">
+                            <div class="art-description">
+                                <h3>Voidless</h3>
+                                <p>Never drew a twi'lek before (I think that is what the species is called?). I've 
+                                   seen them on Star Wars though and they are really cool. This is one of my first
+                                   tries digitally painting a humanoid character! I really want to get good at
+                                   painting humans one day, and I think this is a decent start.
+                                </p>
+                                <p>This art is part of an art trade with my friend, <span>CaraSilvaArt</span> on
+                                   DeviantArt! She has awesome art, so you should check her out!</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
         </main>
+
         <footer>
-            <nav id="footer-nav">
-                <a href="">Terms of Service</a>
-                <a href="">Contact Me</a>
+            <nav class="footer-nav">
+                <a target="_blank" href="art/etc/Skylacuna _ Terms of Service.pdf">Terms of Service</a>
+                <a href="./contact.html">Contact Me</a>
             </nav>
             <p>Skylacuna &copy; 2020</p>
-            <nav id="social-media">
+            <nav aria-label="social media links" class="social-media">
                 <a href="https://www.deviantart.com/skylacuna/gallery/">DeviantArt</a>
                 <a href="https://www.instagram.com/skylacuna/">Instagram</a>
                 <a href="https://www.youtube.com/channel/UCV86nnfYHiz5Mi4oFOokEJQ">YouTube</a>
@@ -49,6 +176,7 @@
                 <a href="https://www.twitch.tv/marshmerry">Twitch</a>
             </nav>
         </footer>
-        <script src="main.js"></script>
+
+        <script src="./js/gallery.js"></script>
     </body>
 </html>
