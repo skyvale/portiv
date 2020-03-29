@@ -341,10 +341,14 @@ footer > nav {
 .commission-container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     color: #707070;
     width: 1800px;
     margin: 0 auto;
+}
+.commission-info {
+    max-width: 1500px;
 }
 .commission-page h3 {
     font-size: 3.2rem;
@@ -398,11 +402,11 @@ footer > nav {
 }
 
 /* This is for the left navigation aka breadcrumbs */
-.commission-container nav {
+.commission-page nav {
     display: flex;
     width: 300px;
 }
-.commission-container nav ul {
+.commission-page nav ul {
     width: 300px;
     position: fixed;
     top: 12%;
@@ -410,9 +414,10 @@ footer > nav {
     list-style: none;
     margin: 0;
     border-left: 1px solid #95fdc1;
-
+    color: #707070;
+    font-weight: 700;
 }
-.commission-container nav ul li:hover {
+.commission-page nav ul li:hover {
     cursor: pointer;
     color: #95fdc1;
 }
