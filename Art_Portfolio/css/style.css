@@ -38,6 +38,7 @@ header::after {
 nav {
     width: 1000px;
     margin: 2rem auto 0;
+    display: block;
 }
 nav ul {
     overflow: hidden;
@@ -61,6 +62,13 @@ nav a:hover {
 [aria-current="page"] > a {
     color: #95fdc1;
 }
+.burger-open {
+    display: none;
+}
+.burger-close {
+    display: none;
+}
+
 
 /* This section is the gallery dropdown navigation */
 .dropdown{
@@ -85,6 +93,7 @@ li:hover > ul {
 /* ----- | FOOTER | ----- */
 
 footer {
+    display: inline-block;
     color: #707070;
     margin-top: 10rem;
     height: 100px;
@@ -669,3 +678,383 @@ form button:hover {
     background-color: #95FDC1;
     color: #515658;
 }
+
+/* ----------------------------------
+   ---------| MEDIA QUERIES |--------
+   ---------------------------------- 
+*/
+
+@media(max-width: 1200px) {
+    .carousel-container {
+        position: relative;
+        width: 40%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .carousel-slide {
+        margin-top: 4rem;
+        display: flex;
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media(max-width: 1000px) {
+
+    body {
+        position: relative;
+    }
+
+    header {
+        width: 100%;
+        height: 85px;
+        background-color: rgb(37, 10, 124);
+        background-image: none;
+    }
+    header::after {
+        display: none;
+    }
+
+    /* ----- | MAIN NAV MEDIA| ----- */
+    [aria-label="main navigation"] {
+        z-index: 1000;
+        position: absolute;
+        width: 400px;
+        height: 100vh;
+        margin: 0;
+        padding: 4rem 1rem;
+        top: 0;
+        right: 0;
+        background-color: #121314;
+        box-shadow: 0 0 10px #95fdc1;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    [aria-label="main navigation"]::before {
+        content: "";
+        display: block;
+        height: 160px;
+        width: 160px;
+        background-image: url('../art/icons/small_logo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto 2rem auto;
+    }
+    [aria-label="main navigation"] li {
+        float: none;
+        line-height: 2;
+        font-size: 2.2rem;
+    }
+    [aria-label="main navigation"] a {
+        color:#707070;    
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+    [aria-label="main navigation"] a:hover {
+        color: #95fdc1;
+    } 
+    [aria-current="page"] > a {
+        color: #95fdc1;
+    }
+    .burger-open {
+        display: block;
+        font-size: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+    }
+    .burger-open::before {
+        content: "";
+        display: block;
+        height: 100px;
+        width: 100px;
+        background-image: url('../art/icons/burger_closed.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .burger-open:hover {
+        cursor: pointer;
+        opacity: 50%;
+    }
+    .burger-close {
+        display: block;
+        font-size: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+    }
+    .burger-close::before {
+        content: "";
+        display: block;
+        height: 100px;
+        width: 100px;
+        background-image: url('../art/icons/burger_open.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .burger-close:hover {
+        cursor: pointer;
+        opacity: 50%;
+    }
+
+    /* ----- | FOOTER MEDIA | ----- */
+
+    footer {
+        display: none;
+        width: 300px;
+        position: absolute;
+        top: 600px;
+        right: 50px;
+        background-color: transparent;
+        z-index: 1000;
+    }
+    footer a {
+        color: #707070;
+    }
+    footer p {
+        display: none;
+    }
+    .footer-nav {
+        display: none;
+    }
+    .social-media {
+        font-size: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .social-media a:hover {
+        opacity: 50%;
+    }
+    .social-media a:first-of-type::before { /* deviantart */
+        content: "";
+        display: block;
+        height: 50px;
+        width: 50px;
+        background-image: url('../art/icons/deviant.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0.2rem;
+    }
+    .social-media a:nth-of-type(2)::before { /* instagram */
+        content: "";
+        display: block;
+        height: 50px;
+        width: 50px;
+        background-image: url('../art/icons/instagram.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0.2rem;
+    }
+    .social-media a:nth-of-type(3)::before { /* youtube */
+        content: "";
+        display: block;
+        height: 50px;
+        width: 50px;
+        background-image: url('../art/icons/youtube.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0.2rem;
+    }
+    .social-media a:nth-of-type(4)::before { /* twitter */
+        content: "";
+        display: block;
+        height: 50px;
+        width: 50px;
+        background-image: url('../art/icons/twitter.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0.2rem;
+    }
+    .social-media a:last-of-type::before { /* twitch */
+        content: "";
+        display: block;
+        height: 50px;
+        width: 50px;
+        background-image: url('../art/icons/twitch.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0.2rem;
+    }
+
+    /*  ----------------------------------
+        -----------| HOME MEDIA |----------
+        ---------------------------------- 
+    */
+
+    /* ----- | Image Carousel | ----- */
+    .carousel-container {
+        position: relative;
+        width: 450px;
+        height: 300px;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .carousel-slide {
+        margin-top: 2rem;
+        display: flex;
+        width: 100%;
+        height: 400px;
+    }
+
+    /* ----- | Buttons | ----- */
+    #prev-btn {
+        position: absolute;
+        z-index: 10;
+        font-size: 0;
+        left: 15%;
+        top: 12%;
+        background-color: transparent;
+        transition: all .2s ease-in-out;
+    }
+    #prev-btn::before {
+        content: "";
+        display: block;
+        height: 51px;
+        width: 51px;
+        background-image: url('../art/icons/previous.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #prev-btn:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        opacity: 50%;
+    }
+    #next-btn {
+        position: absolute;
+        z-index: 10;
+        font-size: 0;
+        right: 15%;
+        top: 12%;
+        background-color: transparent;
+        transition: all .2s ease-in-out;
+    }
+    #next-btn::before {
+        content: "";
+        display: block;
+        height: 51px;
+        width: 51px;
+        background-image: url('../art/icons/next.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #next-btn:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        opacity: 50%;
+    }
+
+    /* ----- | Gallery Cards | ----- */
+    #gallery-cards {
+        outline: 1px solid red;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card h2 {
+        font-size: 3.2rem;
+        font-family: Heavy Data;
+        color: #95FDC1;
+        text-align: center;
+        margin: 4rem 0 1.5rem;
+    }
+    .card a {
+        margin: 0 4rem;
+        font-size: 0;
+        display: flex;
+        border: 2px solid #95FDC1;
+        width: 400px;
+        height: 275px;
+        box-shadow: 0 0 10px #95FDC1;
+        transition: all .2s ease-in-out;
+    }
+    .card a:hover {
+        cursor: pointer;
+        box-shadow: 0 0 20px #95FDC1;
+        transform: scale(1.1);
+    }
+    #gallery-cards li:last-of-type {
+        margin-bottom: 10rem;
+    }
+    #gallery-cards li:nth-of-type(1)::before {
+        content: "";
+        display: block;
+        height: 275px;
+        width: 400px;
+        background-image: url('../art/thumbnails/platinum_thumbnail.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 90px;
+        opacity: 80%;
+        z-index: -1;
+        margin: 0 4rem;
+    }
+    #gallery-cards li:nth-of-type(2)::before {
+        content: "";
+        display: block;
+        height: 275px;
+        width: 400px;
+        background-image: url('../art/thumbnails/chiakiro_thumbnail.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        bottom: 460px;
+        opacity: 80%;
+        z-index: -1;
+        margin: 0 4rem;
+    }
+    #gallery-cards li:nth-of-type(3)::before {
+        content: "";
+        display: block;
+        height: 275px;
+        width: 400px;
+        background-image: url('../art/thumbnails/bepis_thumbnail.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        bottom: 100px;
+        opacity: 80%;
+        z-index: -1;
+        margin: 0 4rem;
+    }
+    #gallery-cards li:hover {
+        opacity: 100%;
+    }
+
+    /* ----------------------------------------
+   ------------| GALLERY PAGES |-----------
+   ----------------------------------------
+    */
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image-grid img {
+        width: 300px;
+        height: 300px;
+        opacity: 50%;
+        margin: 4rem;
+        box-shadow: 0 0 2px #95fdc1;
+        transition: all .2s ease-in-out;
+    }
+    .image-grid img:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        opacity: 100%;
+        box-shadow: 0 0 20px #95fdc1;
+    }
+
+
+} /* end of 1200px media query */

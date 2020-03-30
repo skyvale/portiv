@@ -4,7 +4,10 @@
    -------------
 */
 
+// =====================================================
+
 // carousel and images
+const carouselContainer = document.querySelector('.carousel-container');
 const carouselSlide = document.querySelector(".carousel-slide");
 const carouselImages = document.querySelectorAll(".carousel-slide img");
 
@@ -41,3 +44,43 @@ carouselSlide.addEventListener('transitionend', ()=> { // goes off after each an
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 });
+
+
+// reloads page after user re-sizes it, since the carousel doesn't resize actively
+let resized;
+window.addEventListener('resize', ()=> {
+    clearTimeout(resized);
+    resized = setTimeout(doneResizing, 500);
+});
+
+doneResizing = () => {
+    window.location.reload();
+}
+
+// =====================================================
+
+// hamburger button
+const closeBurger = document.querySelector('.burger-close');
+const openBurger = document.querySelector('.burger-open');
+
+// navigation
+const navigation = document.querySelector('nav');
+
+// social media
+const socials = document.querySelector('footer');
+
+// closes the nav
+closeBurger.addEventListener('click', ()=> {
+    navigation.style.display = "none";
+    socials.style.display = "none";
+    navigation.setAttribute('hidden',"");
+
+});
+
+// opens the nav
+openBurger.addEventListener('click', ()=> {
+    navigation.style.display = "flex";
+    socials.style.display = "flex";
+    navigation.removeAttribute('hidden');
+});
+
