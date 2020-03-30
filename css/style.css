@@ -292,6 +292,7 @@ footer > nav {
     border: 2px solid rgb(149, 253, 193);
     width: 275px;
     height: 400px;
+    z-index: 10;
     background-color: transparent;
     box-shadow: 0 0 10px rgb(149, 253, 193);
     transition: all .2s ease-in-out;
