@@ -309,7 +309,6 @@ footer > nav {
     background-repeat: no-repeat;
     background-position: center;
     opacity: 80%;
-    z-index: -1;
     position: absolute;
     bottom: 0;
     margin: 0 4rem;
@@ -323,7 +322,6 @@ footer > nav {
     background-repeat: no-repeat;
     background-position: center;
     opacity: 80%;
-    z-index: -1;
     position: absolute;
     bottom: 0;
     margin: 0 4rem;
@@ -337,7 +335,6 @@ footer > nav {
     background-repeat: no-repeat;
     background-position: center;
     opacity: 80%;
-    z-index: -1;
     position: absolute;
     bottom: 0;
     margin: 0 4rem;
