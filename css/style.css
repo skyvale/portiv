@@ -57,10 +57,10 @@ nav a {
     text-decoration: none;
 }
 nav a:hover {
-    color: #95fdc1;
+    color: rgb(149, 253, 193);
 } 
 [aria-current="page"] > a {
-    color: #95fdc1;
+    color: rgb(149, 253, 193);
 }
 .burger-open {
     display: none;
@@ -86,7 +86,7 @@ li:hover > ul {
     visibility: visible;
     font-size: 1.8rem;
     background-color: #121314;
-    border: 2px solid #95fdc1;
+    border: 2px solid rgb(149, 253, 193);
     border-radius: 0 0 10px 10px;
 }
 
@@ -101,7 +101,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     font-size: 1.8rem;
-    border-top: 2px solid #95FDC1;
+    border-top: 2px solid rgb(149, 253, 193);
 }
 footer a {
     color: #707070;
@@ -256,7 +256,7 @@ footer > nav {
 .home-page span {
     display: block;
     font-size: 4rem;
-    color: #95FDC1;
+    color: rgb(149, 253, 193);
     font-family: Heavy Data;
     margin: 2rem;
 }
@@ -281,7 +281,7 @@ footer > nav {
 .card h2 {
     font-size: 3.2rem;
     font-family: Heavy Data;
-    color: #95FDC1;
+    color: rgb(149, 253, 193);
     text-align: center;
     margin-bottom: 4rem;
 }
@@ -289,15 +289,15 @@ footer > nav {
     margin: 0 4rem;
     font-size: 0;
     display: flex;
-    border: 2px solid #95FDC1;
+    border: 2px solid rgb(149, 253, 193);
     width: 275px;
     height: 400px;
-    box-shadow: 0 0 10px #95FDC1;
+    box-shadow: 0 0 10px rgb(149, 253, 193);
     transition: all .2s ease-in-out;
 }
 .card a:hover {
     cursor: pointer;
-    box-shadow: 0 0 20px #95FDC1;
+    box-shadow: 0 0 20px rgb(149, 253, 193);
     transform: scale(1.1);
 }
 #gallery-cards li:nth-of-type(1)::before {
@@ -362,7 +362,7 @@ footer > nav {
 .commission-page h3 {
     font-size: 3.2rem;
     font-weight: 700;
-    color: #95fdc1;
+    color: rgb(149, 253, 193);
     border-bottom: 1px solid #515658;
 }
 .commission-container img {
@@ -422,12 +422,12 @@ footer > nav {
     padding-left: 10px;
     list-style: none;
     margin: 0;
-    border-left: 1px solid #95fdc1;
+    border-left: 1px solid rgb(149, 253, 193);
 
 }
 .commission-container nav ul li:hover {
     cursor: pointer;
-    color: #95fdc1;
+    color: rgb(149, 253, 193);
 }
 
 /* This is for the additional commission info section */
@@ -471,14 +471,14 @@ footer > nav {
     height: 300px;
     opacity: 50%;
     margin: 4rem;
-    box-shadow: 0 0 2px #95fdc1;
+    box-shadow: 0 0 2px rgb(149, 253, 193);
     transition: all .2s ease-in-out;
 }
 .image-grid img:hover {
     cursor: pointer;
     transform: scale(1.1);
     opacity: 100%;
-    box-shadow: 0 0 20px #95fdc1;
+    box-shadow: 0 0 20px rgb(149, 253, 193);
 }
 
 /* this is for the overlay that opens when an image is clicked */
@@ -524,7 +524,7 @@ footer > nav {
     display: flex;
 }
 .overlay-elements h3 {
-    color: #95fdc1;
+    color: rgb(149, 253, 193);
     margin: 2rem;
     font-size: 3.2rem;
     font-weight: 700;
@@ -554,7 +554,7 @@ footer > nav {
 .gallery-hs-page h2 {
     text-align: center;
     font-size: 3.2rem;
-    color: #95fdc1;
+    color: rgb(149, 253, 193);
     font-family: Heavy Data;
     padding: 4rem 2rem;
 }
@@ -569,7 +569,7 @@ footer > nav {
 .about-page h2 {
     text-align: center;
     font-size: 4rem;
-    color: #95FDC1;
+    color: rgb(149, 253, 193);
     margin: 4rem;
     font-family: Heavy Data;
 }
@@ -592,7 +592,7 @@ footer > nav {
 .about-page span a {
     font-size: 2.4rem;
     font-family: Quicksand;
-    color: #95fdc1;
+    color: rgb(149, 253, 193);
 }
 
 .about-page::after {
@@ -618,7 +618,7 @@ footer > nav {
     
 }
 .contact-page span a {
-    color: #95FDC1;
+    color: rgb(149, 253, 193);
 }
 .contact-page span:hover {
     cursor: pointer;
@@ -630,13 +630,13 @@ form {
     color: #707070;
     margin: 0 auto;
     text-align: center;
-    border: 2px solid #95FDC1;
+    border: 2px solid rgb(149, 253, 193);
     border-radius: 5px;
     width: 1200px;
     height: 800px;
 }
 form h2 {
-    color: #95FDC1;
+    color: rgb(149, 253, 193);
     font-size: 3.2rem;
     font-weight: 700;
     margin: 2rem;
@@ -670,12 +670,12 @@ form button {
     width: 300px;
     height: 40px;
     background-color: #515658;
-    color: #95FDC1;
+    color: rgb(149, 253, 193);
     border-radius: 5px;
 }
 form button:hover {
     cursor: pointer;
-    background-color: #95FDC1;
+    background-color: rgb(149, 253, 193);
     color: #515658;
 }
 
@@ -699,7 +699,7 @@ form button:hover {
         .commission-page h3 {
             font-size: 3.2rem;
             font-weight: 700;
-            color: #95fdc1;
+            color: rgb(149, 253, 193);
             border-bottom: 1px solid #515658;
         }
         .commission-container img {
@@ -792,14 +792,14 @@ form button:hover {
         height: 300px;
         opacity: 50%;
         margin: 4rem;
-        box-shadow: 0 0 2px #95fdc1;
+        box-shadow: 0 0 2px rgb(149, 253, 193);
         transition: all .2s ease-in-out;
     }
     .image-grid img:hover {
         cursor: pointer;
         transform: scale(1.1);
         opacity: 100%;
-        box-shadow: 0 0 20px #95fdc1;
+        box-shadow: 0 0 20px rgb(149, 253, 193);
     }
     .col1, .col2 {
         display: flex;
@@ -849,7 +849,7 @@ form button:hover {
         top: 0;
         right: 0;
         background-color: #121314;
-        box-shadow: 0 0 10px #95fdc1;
+        box-shadow: 0 0 10px rgb(149, 253, 193);
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -877,10 +877,10 @@ form button:hover {
         text-decoration: none;
     }
     [aria-label="main navigation"] a:hover {
-        color: #95fdc1;
+        color: rgb(149, 253, 193);
     } 
     [aria-current="page"] > a {
-        color: #95fdc1;
+        color: rgb(149, 253, 193);
     }
 
     /* This section is the gallery dropdown navigation */
@@ -898,7 +898,7 @@ form button:hover {
         visibility: visible;
         font-size: 1.8rem;
         background-color: #121314;
-        border: 2px solid #95fdc1;
+        border: 2px solid rgb(149, 253, 193);
         border-radius: 0 0 10px 10px;
     }
 
@@ -1107,7 +1107,7 @@ form button:hover {
     .card h2 {
         font-size: 3.2rem;
         font-family: Heavy Data;
-        color: #95FDC1;
+        color: rgb(149, 253, 193);
         text-align: center;
         margin: 4rem 0 1.5rem;
     }
@@ -1115,15 +1115,15 @@ form button:hover {
         margin: 0 4rem;
         font-size: 0;
         display: flex;
-        border: 2px solid #95FDC1;
+        border: 2px solid rgb(149, 253, 193);
         width: 400px;
         height: 275px;
-        box-shadow: 0 0 10px #95FDC1;
+        box-shadow: 0 0 10px rgb(149, 253, 193);
         transition: all .2s ease-in-out;
     }
     .card a:hover {
         cursor: pointer;
-        box-shadow: 0 0 20px #95FDC1;
+        box-shadow: 0 0 20px rgb(149, 253, 193);
         transform: scale(1.1);
     }
     #gallery-cards li:last-of-type {
@@ -1191,14 +1191,14 @@ form button:hover {
         height: 400px;
         opacity: 50%;
         margin: 4rem;
-        box-shadow: 0 0 2px #95fdc1;
+        box-shadow: 0 0 2px rgb(149, 253, 193);
         transition: all .2s ease-in-out;
     }
     .image-grid img:hover {
         cursor: pointer;
         transform: scale(1.1);
         opacity: 100%;
-        box-shadow: 0 0 20px #95fdc1;
+        box-shadow: 0 0 20px rgb(149, 253, 193);
     }
     .col1, .col2 {
         display: flex;
@@ -1227,7 +1227,7 @@ form button:hover {
         text-align: center;
         font-size: 3.2rem;
         font-weight: 700;
-        color: #95fdc1;
+        color: rgb(149, 253, 193);
         border-bottom: 1px solid #515658;
     }
     .commission-container img {
@@ -1300,7 +1300,7 @@ form button:hover {
     .about-page h2 {
         text-align: center;
         font-size: 4rem;
-        color: #95FDC1;
+        color: rgb(149, 253, 193);
         margin: 4rem;
         font-family: Heavy Data;
     }
@@ -1359,7 +1359,7 @@ form button:hover {
     .about-page h2 {
         text-align: center;
         font-size: 4rem;
-        color: #95FDC1;
+        color: rgb(149, 253, 193);
         margin: 4rem;
         font-family: Heavy Data;
     }
